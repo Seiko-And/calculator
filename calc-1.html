@@ -51,7 +51,8 @@
       }
       // When you click '=', evaluate the expression
       else if (numEntered == '='){
-        answer.value = eval(answer.value);
+        let result = eval(answer.value);
+        answer.value = parseFloat(result.toFixed(8));
         
         // Testing
         // console.log('=');
